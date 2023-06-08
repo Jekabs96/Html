@@ -5,12 +5,14 @@
     <title>HTML&CSS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css"
 </head>
 
 <body style="margin: 0; padding: 0;">
 
     <!-- Header -->
-    <header style="background-color: aliceblue; position: sticky; top: 0; display: flex; flex-direction: row; justify-content: space-between;">
+    <header>
+        
         <a href="#pavasaris">Šeit ir virsraksts, kurš paliek galvenes daļā.</a>
         <div>
             <a href="#vasara">Vasara</a>
@@ -19,42 +21,86 @@
     </header>
 
     <div id="pavasaris">
-        <img src="resources/Pavasaris.jpg" alt="Pavasaris">
+        <img src="resources/Pavasaris.jpg" alt="Pavasaris" width="100%">
         <div>
             <h1>Pavasaris</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-        <div id="vasara">
-            <img src="resources/Vasara.jpg" alt="Vasara">
-            <h1>Šeit ir apraksts, kuram ir jāatrodas bildei kreisajā pusē.</h1><br>
+    </div>
+    <div id="vasara" class="content" style="display: flex; flex-direction: row-reverse;">
+        <img src="resources/Vasara.jpg" alt="Vasara">
+        <div style="display: flex; flex-direction: column;"> 
+            <h1 style="float:left";>Šeit ir apraksts, kuram ir jāatrodas bildei kreisajā pusē.</h1><br>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
+    </div>
 
-        <div id="plava" style="display: flex; flex-direction: row;">
-            <div style="display: block;">
-                <img style="display: block; width:100%" src="resources/Plava.jpg" alt="Plava">
-            </div>
-            <div style="display: block;">
-                <h1>Šeit apraksts, kuram ir jāatrodas bildes labajā pusē.</h1>
-            </div>
+    <div id="plava" style="display: flex; flex-direction: row;">
+        <div style="display: block;">
+            <img src="resources/Plava.jpg" alt="Plava">
         </div>
-
-        <!-- Exercises -->
-        <div id="exercises">
-            <h1>Uzdevumi</h1><br>
-            <p>Nomaini visiem tekstiem fontu.</p>
-            <p>Sakārto bilžu un tekstu novietojumu.</p>
-            <p>Pieliec tekstu zem virsrakstiem.</p>
-            <p>Pārtaisi uzdevumu sadaļu, izmantojot HTML atbilstošu tagu, lai izveidotu sarakstu.</p>
-            <p>Pieliec stilu header daļai, lai tā atgādinātu header.</p>
-            <p>Pieliec stilu footer daļai, lai teksts būtu centrā un elements izskatītos pēc footer.</p>
-            <p>Augšējo bildi formatē tā, lai tiktu aizņemts viss ekrāna platums.</p>
-            <p>Pievieno karti.</p>
-            <p>Pievieno tabulu, kurai būtu vismaz 2 kolonnas un 3 rindas.</p>
+        <div style="display: block;">
+            <h1 >Šeit apraksts, kuram ir jāatrodas bildes labajā pusē.</h1><br>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
+    </div>
 
-        <!-- Footer -->
-        <footer>
-            <p>Šeit ir tukšs footers</p>
-        </footer>
+    <!-- Exercises -->
+    <div id="exercises">
+        <h1>Uzdevumi</h1><br>
+        <ul>
+            <li>Nomaini visiem tekstiem fontu.</li>
+            <li>Sakārto bilžu un tekstu novietojumu.</li>
+            <li>Pieliec tekstu zem virsrakstiem.</li>
+            <li>Pārtaisi uzdevumu sadaļu, izmantojot HTML atbilstošu tagu, lai izveidotu sarakstu.</li>
+            <li>Pieliec stilu header daļai, lai tā atgādinātu header.</li>
+            <li>Pieliec stilu footer daļai, lai teksts būtu centrā un elements izskatītos pēc footer.</li>
+            <li>Augšējo bildi formatē tā, lai tiktu aizņemts viss ekrāna platums.</li>
+            <li>Pievieno karti.</li>
+            <li>Pievieno tabulu, kurai būtu vismaz 2 kolonnas un 3 rindas.</li>
+        </ul>
+    </div>
+    <table border = "1" cellpadding = "0" Cellspacing ="0" width = 100% >
+        <tr>
+            <th>Virsraksts 1</th>
+            <th>Virsraksts 2</th>
+        </tr>
+        <tr align="center">
+            <td>1. rinda 1. kolonna</td>
+            <td>1. rinda 2. kolonna</td>
+        </tr>
+        <tr align="center">
+            <td>2. rinda 1. kolonna</td>
+            <td>2. rinda 2. kolonna</td>
+        </tr>
+        <tr align="center">
+            <td>3. rinda 1. kolonna</td>
+            <td>3. rinda 2. kolonna</td>
+        </tr>
+    </table>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59945.44788923613!2d24.80616028502853!3d57.14874274407181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e9370b33eec171%3A0xdb1caf2256df12fb!2sVillasmui%C5%BEa%2C%20Ropa%C5%BEu%20pagasti%2C%20LV-2135!5e0!3m2!1sen!2slv!4v1686241854661!5m2!1sen!2slv"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Footer -->
+    <footer>
+        <p><center><font size = +2> Šeit ir tukšs footers</font></center></p>
+    </footer>
 
 </body>
 

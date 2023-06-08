@@ -1,0 +1,20 @@
+header {
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#pavasaris {
+    background-color: aquamarine;
+}
+
+.content {
+    background-color: chocolate;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
